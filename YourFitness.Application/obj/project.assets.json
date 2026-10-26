@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "YourFitness.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/YourFitness.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YourFitness.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "YourFitness.Domain/1.0.0": {
+      "type": "project",
+      "path": "../YourFitness.Domain/YourFitness.Domain.csproj",
+      "msbuildProject": "../YourFitness.Domain/YourFitness.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "YourFitness.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\wedun\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Domain\\YourFitness.Domain.csproj": {
+              "projectPath": "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Domain\\YourFitness.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

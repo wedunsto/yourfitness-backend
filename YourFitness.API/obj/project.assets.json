@@ -36,6 +36,42 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "YourFitness.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "YourFitness.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/YourFitness.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YourFitness.Application.dll": {}
+        }
+      },
+      "YourFitness.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/YourFitness.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YourFitness.Domain.dll": {}
+        }
+      },
+      "YourFitness.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "YourFitness.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/YourFitness.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/YourFitness.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -75,11 +111,28 @@
         "microsoft.openapi.2.0.0.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "YourFitness.Application/1.0.0": {
+      "type": "project",
+      "path": "../YourFitness.Application/YourFitness.Application.csproj",
+      "msbuildProject": "../YourFitness.Application/YourFitness.Application.csproj"
+    },
+    "YourFitness.Domain/1.0.0": {
+      "type": "project",
+      "path": "../YourFitness.Domain/YourFitness.Domain.csproj",
+      "msbuildProject": "../YourFitness.Domain/YourFitness.Domain.csproj"
+    },
+    "YourFitness.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../YourFitness.Infrastructure/YourFitness.Infrastructure.csproj",
+      "msbuildProject": "../YourFitness.Infrastructure/YourFitness.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.3"
+      "Microsoft.AspNetCore.OpenApi >= 10.0.3",
+      "YourFitness.Application >= 1.0.0",
+      "YourFitness.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -106,7 +159,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Application\\YourFitness.Application.csproj": {
+              "projectPath": "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Application\\YourFitness.Application.csproj"
+            },
+            "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Infrastructure\\YourFitness.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\wedun\\Documents\\GitHub Repos\\YourFitness\\yourfitness-backend\\YourFitness.Infrastructure\\YourFitness.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
