@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a5e6474b-91c4-40e3-aeba-e208bd77eb43")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6f474d5bea1525b4124b8b6b3814bcaa944f942")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e1a00b0e2f06d835b9d19a7b97b16cb1227275e")]
 [assembly: System.Reflection.AssemblyProductAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

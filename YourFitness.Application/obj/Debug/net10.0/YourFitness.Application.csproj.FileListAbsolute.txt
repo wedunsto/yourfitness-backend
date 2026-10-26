@@ -1,0 +1,16 @@
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\bin\Debug\net10.0\YourFitness.Application.deps.json
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\bin\Debug\net10.0\YourFitness.Application.dll
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\bin\Debug\net10.0\YourFitness.Application.pdb
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\bin\Debug\net10.0\YourFitness.Domain.dll
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\bin\Debug\net10.0\YourFitness.Domain.pdb
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.csproj.AssemblyReference.cache
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.AssemblyInfoInputs.cache
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.AssemblyInfo.cs
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.csproj.CoreCompileInputs.cache
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.sourcelink.json
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitn.D5146C52.Up2Date
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.dll
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\refint\YourFitness.Application.dll
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\YourFitness.Application.pdb
+C:\Users\wedun\Documents\GitHub Repos\YourFitness\yourfitness-backend\YourFitness.Application\obj\Debug\net10.0\ref\YourFitness.Application.dll

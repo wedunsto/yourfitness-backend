@@ -30,13 +30,13 @@ public class AppDbContext: DbContext
             user.Property(user => user.Password).HasColumnName("password");
 
             // Map User property 'Onboarded' to database column 'onboarded'
-            user.Property(user => user.Onboarded).HasColumnName("onboarded");
+            user.Property(user => user.Onboarded).HasColumnName("onboarded").HasDefaultValueSql("false");
 
             // Map User property 'CreatedAt' to database column 'created_at'
-            user.Property(user => user.CreatedAt).HasColumnName("created_at");
+            user.Property(user => user.CreatedAt).HasColumnName("created_at").HasDefaultValueSql("now()");
 
             // Map User property 'UpdatedAt' to database column 'updated_at'
-            user.Property(user => user.UpdatedAt).HasColumnName("updated_at");
+            user.Property(user => user.UpdatedAt).HasColumnName("updated_at").HasDefaultValueSql("now()");
         });
     }
 }
