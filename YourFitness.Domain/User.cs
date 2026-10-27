@@ -8,4 +8,14 @@ public class User
     public bool Onboarded { get; set; } = false;
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
+
+    // Default constructor for EF Core
+    private User() {}
+
+    // Overloaded constructor for creating Users
+    public User(string username, string password)
+    {
+        Username = username;
+        Password = password;
+    }
 }
