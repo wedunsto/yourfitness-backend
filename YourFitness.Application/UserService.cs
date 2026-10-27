@@ -17,7 +17,7 @@
     }
 
     // Create a new user
-    public async void Register(string username, string password)
+    public async Task Register(string username, string password)
     {
         var newUser = new User(username, password);
         _repository.AddUserAsync(newUser);

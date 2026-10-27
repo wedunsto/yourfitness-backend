@@ -16,6 +16,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // When something asks for the interface, give it the class
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+// Register the User service
+builder.Services.AddScoped<UserService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
