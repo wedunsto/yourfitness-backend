@@ -17,10 +17,22 @@
     }
 
     // Create a new user
-    public async Task CreateUser(string username, string password)
+    public async void Register(string username, string password)
     {
         var newUser = new User(username, password);
-        _repository.AddAsync(newUser);
+        _repository.AddUserAsync(newUser);
         await _repository.SaveChangesAsync();
+    }
+
+    // Get an existing user
+    public async Task<string> Login(string username, string password)
+    {
+        var existingUser = await _repository.GetUserAsync(username);
+
+        if (existingUser?.Password != password)
+        {
+            return "Invalid credentials";
+        }
+        return "Valid credentials";
     }
 }

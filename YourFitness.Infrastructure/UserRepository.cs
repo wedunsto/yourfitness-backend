@@ -14,13 +14,15 @@ public class UserRepository : IUserRepository
         _context = context;
     }
 
-    // Implement the AddAsync function from the repository interface
-    public void AddAsync(User user)
+    // Implement the AddUserAsync function from the repository interface
+    public void AddUserAsync(User user)
         => _context.Users.Add(user);
 
-    // Implement the GetByIdAsync function from the repository interface
-    public Task<User?> GetUserAsync(string id)
-        => _context.Users.FirstOrDefaultAsync(user => user.Id == id);
+    // Implement the GetUserAsync function from the repository interface
+    public Task<User?> GetUserAsync(string username)
+    {
+        return _context.Users.FirstOrDefaultAsync(user => user.Username == username);
+    }
 
     // Implement the SaveChangesAsync function from the repository interface
     public Task SaveChangesAsync()
