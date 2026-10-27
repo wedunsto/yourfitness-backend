@@ -1,8 +1,10 @@
-﻿namespace YourFitness.Domain;
+﻿using System;
+
+namespace YourFitness.Domain;
 
 public class User
 {
-    public string Id { get; private set; } = "";
+    public string Id { get; } = "";
     public string Username { get; set; } = "";
     public string Password { get; set; } = "";
     public bool Onboarded { get; set; } = false;
@@ -17,5 +19,6 @@ public class User
     {
         Username = username;
         Password = password;
+        Id = Guid.NewGuid().ToString();
     }
 }
