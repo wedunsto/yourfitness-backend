@@ -27,9 +27,9 @@ public class UsersController : ControllerBase
 
     // Log in an existing user on yourfitness/login
     [HttpPost("login")]
-    public async Task<string> Login(AuthenticateUserRequest request)
+    public async Task<IActionResult> Login(AuthenticateUserRequest request)
     {
         var jsonWebToken = await _service.Login(request.username, request.password);
-        return jsonWebToken;
+        return jsonWebToken is null ? Unauthorized() : Ok(new { jsonWebToken });
     }
 }

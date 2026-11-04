@@ -10,10 +10,12 @@
  public class UserService
 {
     private readonly IUserRepository _repository;
+    private readonly ITokenService _tokenService;
 
-    public UserService(IUserRepository repository)
+    public UserService(IUserRepository repository, ITokenService tokenService)
     {
         _repository = repository;
+        _tokenService = tokenService;
     }
 
     // Create a new user
@@ -25,14 +27,15 @@
     }
 
     // Get an existing user
-    public async Task<string> Login(string username, string password)
+    public async Task<string?> Login(string username, string password)
     {
         var existingUser = await _repository.GetUserAsync(username);
 
-        if (existingUser?.Password != password)
+        if (existingUser is null ||  existingUser?.Password != password)
         {
-            return "Invalid credentials";
+            return null;
         }
-        return "Valid credentials";
+
+        return _tokenService.CreateToken(existingUser);
     }
 }

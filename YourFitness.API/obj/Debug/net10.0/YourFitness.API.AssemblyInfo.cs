@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e304a632abd89f931a257041a0f250873fb7107")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+475a082d9d0703d969b4cef37b1eb681ab8a7086")]
 [assembly: System.Reflection.AssemblyProductAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("YourFitness.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
